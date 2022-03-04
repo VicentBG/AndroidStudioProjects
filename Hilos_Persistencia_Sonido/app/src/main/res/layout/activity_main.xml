@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="64dp"
+    android:paddingTop="16dp"
+    tools:context=".MainActivity"
+    style="@style/pantalla">
+
+    <TextView
+        android:id="@+id/texto_botones"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/facil"
+        style="@style/texto_botones"/>
+
+    <Button
+        android:id="@+id/facil"
+        android:layout_toLeftOf="@+id/medio"
+        android:layout_alignBaseline="@+id/dificil"
+        android:text="@string/facil"
+        style="@style/boton_Dificultad"/>
+
+    <Button
+        android:id="@+id/medio"
+        android:layout_toLeftOf="@+id/dificil"
+        android:layout_alignBaseline="@+id/dificil"
+        android:text="@string/medio"
+        style="@style/boton_Dificultad"/>
+
+    <Button
+        android:id="@+id/dificil"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/texto_botones"
+        android:text="@string/dificil"
+        style="@style/boton_Dificultad"/>
+
+    <Button
+        style="@style/boton_ayuda"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:onClick="ayuda" />
+
+</RelativeLayout>

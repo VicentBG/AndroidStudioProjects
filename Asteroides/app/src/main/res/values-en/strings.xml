@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Steroids</string>
+
+    <string name="inicio">Play!</string>
+
+    <string name="config">Configuration</string>
+
+    <string name="salir">Exit</string>
+
+    <string name="info">About...</string>
+
+</resources>

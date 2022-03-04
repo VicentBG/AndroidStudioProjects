@@ -1,0 +1,2 @@
+rootProject.name='Contador'
+include ':app'
